@@ -1,0 +1,678 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amplify Home
+</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="css/font-awesome-ie7.css"><![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js">
+</script>
+<![endif]-->
+
+</script>
+</head>
+
+<body >
+
+<header>
+<div id="div">
+</div>
+</header>
+<section>
+
+<div class="br5 importing_data" >
+
+<div class="w100p float_left border_ccc bg_fff rel" id="data_importer">
+
+<div class="data_div_seprater abs">
+</div>
+
+<div class="float_left w50p padd10" id="lefter_data"><h1 class="title_txt font20 w100p float_left"> Data 1 </h1>
+<ul class="w100p margin_top10 data_lister float_left" id="lefter_datalister">
+<li class="w100p data_f1  float_left padd5 wht_grad border_ccc rel  ">
+
+<span class="float_left lignheight20 text_center font20 color_9"><i class="icon-ellipsis-horizontal"></i>
+</span>
+
+<span class="float_left spaner_2 hide lignheight20 text_center font20 color_9"><i class="icon-ellipsis-vertical"></i>
+</span><h3 class="w90p float_left normal_txt font14">
+<label class="float_left color_9">Name
+</label></h3>
+
+<div class="clear">
+</div>
+
+<div class="float_right w90p extend_data" >
+<ul class="subdata_lister float_left w100p margin_top5">
+<li class="w100p float_left " onclick="open_editname()">
+
+<div class="data_show float_left w100p">
+<label class="w100p font14 float_left color_9">First Name
+</label><h4 class="w100p font18 float_left" id="firstname"></h4>
+<label class="w100p font14 margin_top5 float_left color_9">Last Name
+</label><h4 class="w100p font18 float_left" id="lastname"></h4>
+
+<div class="clear">
+</div>
+
+</div>
+
+<!-- NAME EDIT FORM  -->
+</li>
+</ul>
+</div>
+</li>
+<li class="w100p  float_left padd5 wht_grad border_ccc rel  data_f2" onclick="open_editemail()">
+
+<span class="float_left lignheight20 text_center font20 color_9"><i class="icon-ellipsis-horizontal"></i>
+</span>
+
+<span class="float_left spaner_2 hide lignheight20 text_center font20 color_9"><i class="icon-ellipsis-vertical"></i>
+</span><h3 class="w90p float_left normal_txt font14">
+<label class="float_left color_9">Email
+</label></h3>
+
+<div class="clear">
+</div>
+
+
+<div class="float_right w90p extend_data hide">
+<ul class="subdata_lister float_left w100p margin_top5">
+<li class="w100p float_left">
+
+<div class="data_show float_left w100p"><h4 class="w100p font18 float_left" id="emailid"></h4>
+
+<div class="clear">
+</div>
+
+</div>
+</li>
+</ul>
+</div>
+<!-- EMAIL EDIT DIV	 -->
+</li>
+<li class="w100p  float_left padd5 wht_grad border_ccc rel  data_f2" onclick="open_editjobprofile()">
+
+<span class="float_left lignheight20 text_center font20 color_9"><i class="icon-ellipsis-horizontal"></i>
+</span>
+
+<span class="float_left spaner_2 hide lignheight20 text_center font20 color_9"><i class="icon-ellipsis-vertical"></i>
+</span><h3 class="w90p float_left normal_txt font14">
+<label class="float_left color_9">Job Profile
+</label></h3>
+
+<div class="clear">
+</div>
+
+<div class="float_right w90p extend_data">
+<ul class="subdata_lister float_left w100p margin_top5">
+<li class="w100p float_left">
+
+<div class="data_show float_left w100p"><h4 class="w100p font18 float_left" id="jobprofile"></h4>
+
+<div class="clear">
+</div>
+
+
+</div>
+  <!-- EDIT JOB PROFILE -->
+</li>
+</ul>
+</div></li>
+<li class="w100p  float_left padd5 wht_grad border_ccc rel  data_f2" onclick="open_editlocation()">
+
+<span class="float_left lignheight20 text_center font20 color_9"><i class="icon-ellipsis-horizontal"></i>
+</span>
+
+<span class="float_left spaner_2 hide lignheight20 text_center font20 color_9"><i class="icon-ellipsis-vertical"></i>
+</span><h3 class="w90p float_left normal_txt font14">
+<label class="float_left color_9">Location
+</label></h3>
+
+<div class="clear">
+</div>
+
+<div class="float_right w90p extend_data">
+<ul class="subdata_lister float_left w100p margin_top5">
+<li class="w100p float_left">
+
+<div class="data_show float_left w100p"><h4 class="w100p font18 float_left" id="location"></h4>
+
+<div class="clear">
+</div>
+
+</div>
+<!-- EDIT LOCATION -->
+</li>
+</ul>
+</div>
+</li>
+<li class="w100p  float_left padd5 wht_grad border_ccc rel  data_f3" onclick="open_editcontact()">
+
+<span class="float_left lignheight20 text_center font20 color_9"><i class="icon-ellipsis-horizontal"></i>
+</span>
+
+<span class="float_left spaner_2 hide lignheight20 text_center font20 color_9"><i class="icon-ellipsis-vertical"></i>
+</span><h3 class="w90p float_left normal_txt font14">
+<label class="float_left color_9">Contact No
+</label></h3>
+
+<div class="clear">
+</div>
+
+<div class="float_right w90p extend_data">
+<ul class="subdata_lister float_left w100p margin_top5">
+<li class="w100p float_left">
+
+<div class="data_show float_left w100p"><h4 class="w100p font18 float_left" id="contact"></h4>
+
+<div class="clear">
+</div>
+
+<!-- EDIT CONTACT NUMBER -->
+</div>
+</li>
+</ul>
+</div></li>
+<li class="w100p  float_left padd5 wht_grad border_ccc rel  data_f3">
+
+<span class="float_left lignheight20 text_center font20 color_9"><i class="icon-ellipsis-horizontal"></i>
+</span>
+
+<span class="float_left spaner_2 hide lignheight20 text_center font20 color_9"><i class="icon-ellipsis-vertical"></i>
+</span><h3 class="w90p float_left normal_txt font14">
+<label class="float_left color_9">Skills
+</label></h3>
+
+<div class="clear">
+</div>
+
+<div class="float_right w90p extend_data">
+<ul class="subdata_lister float_left w100p margin_top5">
+<li class="w100p float_left">
+
+<div class="data_show float_left w100p">
+<h4 class="w100p font16 float_left normal_txt" id="KnownSkills">
+
+</h4>
+
+<div class="clear">
+</div>
+
+
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="w100p  float_left padd5 wht_grad border_ccc rel  data_f4">
+<span class="float_left lignheight20 text_center font20 color_9"><i class="icon-ellipsis-horizontal"></i>
+</span>
+<span class="float_left spaner_2 hide lignheight20 text_center font20 color_9"><i class="icon-ellipsis-vertical"></i>
+</span><h3 class="w90p float_left normal_txt font14">
+<label class="float_left color_9">Experience
+</label></h3>
+<div class="clear">
+</div>
+<div class="float_right w90p extend_data" >
+<ul class="subdata_lister subdata_lister_bulk float_left w100p margin_top5" id="addexperience">
+
+
+</ul>
+</div>
+</li>
+<li class="w100p   float_left padd5 wht_grad border_ccc rel  data_f4 " onclick="open_editeducation()">
+
+
+<span class="float_left lignheight20 text_center font20 color_9"><i class="icon-ellipsis-horizontal"></i>
+</span>
+
+<span class="float_left spaner_2 hide lignheight20 text_center font20 color_9"><i class="icon-ellipsis-vertical"></i>
+</span><h3 class="w90p float_left normal_txt font14">
+<label class="float_left color_9">Education
+</label></h3>
+
+<div class="clear">
+</div>
+
+<div class="float_right w90p extend_data">
+<ul class="subdata_lister subdata_lister_bulk float_left w100p margin_top5">
+<li class="w100p border_bottom float_left border_top_f">
+
+<div class="data_show float_left w100p"><h4 class="w100p font18 float_left" id="colegename1">Thapar University</h4>
+<label class="w100p font18 float_left " id="degreename1">BCA
+</label>
+
+<span class="w100p font14 float_left color_9" id="duration1">2013-01-01 to 2014-02-06
+</span>
+
+<div class="clear">
+</div>
+</div>
+</li>
+<li class="w100p border_bottom float_left border_top_f">
+
+<div class="data_show float_left w100p"><h4 class="w100p font18 float_left" id="colegename2">IMS</h4>
+<label class="w100p font18 float_left " id="degreename2">MCA
+</label>
+
+<span class="w100p font14 float_left color_9" id="duration2">2013-01-01 to 2014-02-06
+</span>
+
+<div class="clear">
+</div>
+
+</div>
+
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+
+<div class="float_left w50p padd10" id="righter_data">
+<h1 class="title_txt font20 w100p float_left rel"> Data 2 
+
+</h1>
+<ul class="sortable w100p margin_top10 data_lister float_left" style="height:100%">
+
+<!-- EDIT NAME DIV -->
+<div class="float_right w90p extend_data hide" id="edit_namediv">
+<div class="data_show  float_left w100p" id="changename" >
+<label class="w100p font14 float_left color_9">First Name
+</label><h4 class="w100p font18 float_left" id="frstname_toedit"></h4>
+<label class="w100p font14 margin_top5 float_left color_9">Last Name
+</label><h4 class="w100p font18 float_left" id="lastname_toedit"></h4>
+
+<div class="clear">
+</div>
+
+<div class="float_right data_editbtns"><button type="button"  class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9"><i class="icon-remove"></i> Remove </button><button type="button" onclick="changename();" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9" ><i class="icon-pencil"></i> Edit </button>
+</div>
+</div>
+
+
+<div class="data_input hide float_left w100p" id="updatename">
+
+<div class="w100p float_left">
+<label class="w25p float_left font12 lignheight25 color_9 padd_10 txt_right"> First name 
+</label>
+<input type="text" class="float_left w75p border_ccc bg_f8 padd5" id="edited_frstname">
+</div>
+
+<div class="w100p margin_top5 float_left">
+<label class="w25p float_left font12 lignheight25 color_9 padd_10 txt_right"> Last Name 
+</label>
+<input type="text" class="float_left w75p border_ccc bg_f8 padd5" id="edited_lastname">
+</div>
+
+<div class="clear">
+</div>
+
+<div class="float_right data_editbtns margin_top5"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn remove_btn2 color_9" onclick="cancelnamechange()"><i class="icon-remove"></i> Cancel </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn edit_btn2 color_9"><i class="icon-pencil"></i> Update </button>
+</div>
+</div>
+</div>
+<!-- END EDIT NAME DIV -->
+
+<!-- EDIT EMAIL DIV -->
+<div class="float_right w90p extend_data hide" id="edit_email" >
+<ul class="subdata_lister float_left w100p margin_top5">
+<li class="w100p float_left">
+
+<div class="data_show float_left w100p hide" id="change_emailid"><h4 class="w100p font18 float_left" id="show_editemailid"></h4>
+
+<div class="clear">
+</div>
+
+<div class="float_right hide data_editbtns"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9"><i class="icon-remove"></i> Remove </button><button type="button"  class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9" onclick="changeemail();"><i class="icon-pencil"></i> Edit </button>
+</div>
+</div>
+
+<div class="data_input hide float_left w100p" id="updateemailid">
+
+<div class="w100p margin_top5 float_left">
+<label class="w25p float_left font12 lignheight25 color_9 padd_10 txt_right"> Email ID 
+</label>
+<input type="email" class="float_left w75p border_ccc bg_f8 padd5" id="editedemail_id" value="">
+</div>
+
+<div class="clear">
+</div>
+
+<div class="float_right data_editbtns margin_top5"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9" onclick="cancelemailchange()"><i class="icon-remove"></i> Cancel </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9"><i class="icon-pencil"></i> Update </button>
+</div>
+</div></li>
+</ul>
+</div>
+<!-- END EDIT EMAIL DIV -->
+
+<!-- EDIT JOB PROFILE -->
+<div class="float_right w90p extend_data hide" id="editjobprofile">
+<ul class="subdata_lister float_left w100p margin_top5">
+<li class="w100p float_left">
+
+<div class="data_show float_left w100p hide" id="changejobprofile"><h4 class="w100p font18 float_left" id="show_jobprofile"></h4>
+
+<div class="clear">
+</div>
+
+<div class="float_right hide data_editbtns"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9"><i class="icon-remove"></i> Remove </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9" onclick="changejobprofile()"><i class="icon-pencil"></i> Edit </button>
+</div>
+</div>
+
+<div class="data_input hide float_left w100p" id="updatejobprofile">
+
+<div class="w100p margin_top5 float_left">
+<label class="w25p float_left font12 lignheight25 color_9 padd_10 txt_right"> Job Profile 
+</label>
+<input type="email" class="float_left w75p border_ccc bg_f8 padd5" id="edit_jobprofile">
+</div>
+
+<div class="clear">
+</div>
+
+<div class="float_right data_editbtns margin_top5"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9" onclick="canceljobprofile()"><i class="icon-remove"></i> Cancel </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9"><i class="icon-pencil"></i> Update </button>
+</div>
+</div></li>
+</ul>
+</div>
+<!-- END EDIT JOB PROFILE -->
+
+<!-- EDIT JOB LOCATION  -->
+<div class="float_right w90p extend_data" id="editlocation">
+<ul class="subdata_lister float_left w100p margin_top5">
+<li class="w100p float_left">
+
+<div class="data_show float_left w100p hide" id="changelocation"><h4 class="w100p font18 float_left" id="show_location">San Francisco bay Area</h4>
+
+<div class="clear">
+</div>
+
+<div class="float_right hide data_editbtns"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9"><i class="icon-remove"></i> Remove </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9" onclick="changejoblocation()"><i class="icon-pencil"></i> Edit </button>
+</div>
+</div>
+
+<div class="data_input hide float_left w100p" id="updatelocation">
+
+<div class="w100p margin_top5 float_left">
+<label class="w25p float_left font12 lignheight25 color_9 padd_10 txt_right"> Location 
+</label>
+<input type="email" class="float_left w75p border_ccc bg_f8 padd5" id="edit_location">
+</div>
+
+<div class="clear">
+</div>
+
+<div class="float_right data_editbtns margin_top5"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9" onclick="canceljoblocation()"><i class="icon-remove"></i> Cancel </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9"><i class="icon-pencil"></i> Update </button>
+</div>
+</div></li>
+</ul>
+</div>
+<!-- END EDIT JOB LOCATION  -->
+
+<!-- EDIT CONTACTS DETAILS -->
+
+<div class="float_right w90p extend_data hide" id="editcontact">
+<ul class="subdata_lister float_left w100p margin_top5">
+<li class="w100p float_left">
+
+<div class="data_show float_left w100p" id="changecontact"><h4 class="w100p font18 float_left" id="show_contact"></h4>
+
+<div class="clear">
+</div>
+
+
+<div class="float_right data_editbtns hide"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9"><i class="icon-remove"></i> Remove </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9" onclick="changecontact()"><i class="icon-pencil"></i> Edit </button>
+</div>
+</div>
+
+<div class="data_input hide float_left w100p" id="updatecontact">
+
+<div class="w100p margin_top5 float_left">
+<label class="w25p float_left font12 lignheight25 color_9 padd_10 txt_right"> Contact No 
+</label>
+<input type="email" class="float_left w75p border_ccc bg_f8 padd5" id="edit_contact">
+</div>
+
+<div class="clear">
+</div>
+
+<div class="float_right data_editbtns margin_top5"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9" onclick="cancelcontact()"><i class="icon-remove"></i> Cancel </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9"><i class="icon-pencil"></i> Update </button>
+</div>
+</div></li>
+</ul>
+</div>
+<!-- END EDIT CONTACT DETAILS -->
+
+<!--EDIT EXPERIENCE -->
+<div class="float_right w90p extend_data hide" id="editexperience">
+<ul class="subdata_lister subdata_lister_bulk float_left w100p margin_top5">
+<li class="w100p border_bottom float_left border_top_f">
+<div class="data_show float_left w100p hide" id="changeexperience"><h4 class="w100p font18 float_left" id="show_compnyname"></h4>
+<label class="w100p font18 float_left " id="show_profile">
+</label>
+<span class="w100p font14 float_left color_9" id="show_duration">
+</span>
+<div class="clear">
+</div>
+<div class="float_right data_editbtns"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9"><i class="icon-remove"></i> Remove </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9" onclick="changeexperience('updateexperience','changeexperience')"><i class="icon-pencil"></i> Edit </button>
+</div>
+</div>
+<div class="data_input  float_left w100p hide" id="updateexperience">
+<div class="w100p float_left">
+<label class="w30p float_left font12 lignheight25 color_9 padd_10 txt_right"> Organization 
+</label>
+<input type="text" class="float_left w70p border_ccc bg_f8 padd5" id="edit_compnyname">
+</div>
+<div class="w100p margin_top5 float_left">
+<label class="w30p float_left font12 lignheight25 color_9 padd_10 txt_right"> Job Profile 
+</label>
+<input type="text" class="float_left w70p border_ccc bg_f8 padd5" id="edit_profile">
+</div>
+<div class="w100p margin_top5 float_left">
+<label class="w30p float_left font12 lignheight25 color_9 padd_10 txt_right"> Join Date 
+</label>
+<div class="float_left w70p">
+<input type="text" class="w40p float_left border_ccc bg_f8 padd5" id="edit_jobstart">
+<label class="w20p float_left text_center lignheight25 color_9">-to-
+</label>
+<input type="text" class="w40p float_left border_ccc bg_f8 padd5" id="edit_joblast">
+</div>
+</div>
+<div class="clear">
+</div>
+<!--form  buttons-->
+<div class="float_right data_editbtns margin_top5"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9" onclick="cancelexperience('changeexperience','updateexperience')"><i class="icon-remove"></i> Cancel </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9"><i class="icon-pencil"></i> Update </button>
+</div>
+<!--End form  buttons-->
+</div>
+</li>
+
+</ul>
+</div>
+<!-- END EDIT EXPERIENCE -->
+
+<!-- EDIT EDUCATION -->
+
+<div class="float_right w90p extend_data hide" id="editeducation">
+<ul class="subdata_lister subdata_lister_bulk float_left w100p margin_top5">
+<li class="w100p border_bottom float_left border_top_f">
+
+<div class="data_show float_left w100p" id="changeeducation1"><h4 class="w100p font18 float_left" id="showcolege1"></h4>
+<label class="w100p font18 float_left " id="showdegreename1">
+</label>
+
+<span class="w100p font14 float_left color_9" id="show_edu_durtn1">
+</span>
+
+<div class="clear">
+</div>
+
+<div class="float_right data_editbtns"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9"><i class="icon-remove"></i> Remove </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9" onclick="changeeducation('updateeducation1','changeeducation1')"><i class="icon-pencil"></i> Edit </button>
+</div>
+</div>
+
+<div class="data_input float_left w100p hide" id="updateeducation1">
+
+<div class="w100p float_left">
+<label class="w30p float_left font12 lignheight25 color_9 padd_10 txt_right"> College Name 
+</label>
+
+<input type="text" class="float_left w70p border_ccc bg_f8 padd5" id="editcolege1">
+</div>
+
+<div class="w100p margin_top5 float_left">
+<label class="w30p float_left font12 lignheight25 color_9 padd_10 txt_right"> Degree Name
+</label>
+<input type="text" class="float_left w70p border_ccc bg_f8 padd5" id="editdegree1">
+</div>
+
+<div class="w100p margin_top5 float_left">
+<label class="w30p float_left font12 lignheight25 color_9 padd_10 txt_right"> Join Date 
+</label>
+
+<div class="float_left w70p">
+<input type="text" class="w40p float_left border_ccc bg_f8 padd5" id="editdegreestrt1" >
+<label class="w20p float_left text_center lignheight25 color_9">-to-
+</label>
+<input type="text" class="w40p float_left border_ccc bg_f8 padd5" id="editdegreeend1">
+</div>
+</div>
+
+<div class="clear">
+</div>
+
+<div class="float_right data_editbtns margin_top5"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9" onclick="canceleducation('changeeducation1','updateeducation1')"><i class="icon-remove"></i> Cancel </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9"><i class="icon-pencil"></i> Update </button>
+</div>
+</div></li>
+<li class="w100p border_bottom float_left border_top_f">
+
+<div class="data_show float_left w100p" id="changeeducation2"><h4 class="w100p font18 float_left" id="showcolege2"></h4>
+<label class="w100p font18 float_left " id="showdegreename2">
+</label>
+
+<span class="w100p font14 float_left color_9" id="show_edu_durtn2">
+</span>
+
+<div class="clear">
+</div>
+
+<div class="float_right data_editbtns "><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9"><i class="icon-remove"></i> Remove </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9" onclick="changeeducation('updateeducation2','changeeducation2')"><i class="icon-pencil"></i> Edit </button>
+</div>
+</div>
+
+<div class="data_input  float_left w100p hide" id="updateeducation2">
+
+<div class="w100p float_left">
+<label class="w30p float_left font12 lignheight25 color_9 padd_10 txt_right"> College Name 
+</label>
+<input type="text" class="float_left w70p border_ccc bg_f8 padd5" id="editcolege2">
+</div>
+<div class="w100p margin_top5 float_left">
+<label class="w30p float_left font12 lignheight25 color_9 padd_10 txt_right"> Course Nmae 
+</label>
+<input type="text" class="float_left w70p border_ccc bg_f8 padd5" id="editdegree2">
+</div>
+<div class="w100p margin_top5 float_left">
+<label class="w30p float_left font12 lignheight25 color_9 padd_10 txt_right"> Join Date 
+</label>
+<div class="float_left w70p">
+<input type="text" class="w40p float_left border_ccc bg_f8 padd5" id="editdegreestrt2">
+<label class="w20p float_left text_center lignheight25 color_9">-to-
+</label>
+<input type="text" class="w40p float_left border_ccc bg_f8 padd5" id="editdegreeend2">
+</div>
+</div>
+<div class="clear">
+</div>
+<div class="float_right data_editbtns margin_top5"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9" onclick="canceleducation('changeeducation2','updateeducation2')"><i class="icon-remove"></i> Cancel </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9"><i class="icon-pencil"></i> Update </button>
+</div>
+</div></li>
+</ul>
+</div>
+
+<!-- END EDIT EDUCATION -->
+
+
+<!-- EDIT SKILLS -->
+<div class="float_right w90p extend_data hide" id="editKnownskills">
+<ul class="subdata_lister float_left w100p margin_top5">
+<li class="w100p float_left">
+
+<div class="data_show float_left w100p" id="changeknownskills">
+<h4 class="w100p font16 float_left normal_txt">
+<a class="bg_fff data_skil  border_ccc" id="editskill"></a>
+
+</h4>
+
+<div class="clear">
+</div>
+
+<div class="float_right data_editbtns"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9"><i class="icon-remove"></i> Remove </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9" onclick="changeskills();"><i class="icon-pencil"></i> Edit </button>
+</div>
+</div>
+
+<div class="data_input hide float_left w100p" id="updateknownskills">
+
+<div class="w100p margin_top5 float_left">
+<label class="w25p float_left font12 lignheight25 color_9 padd_10 txt_right">Skill 
+</label>
+<input type="email" class="float_left w75p border_ccc bg_f8 padd5" id="changeskills">
+
+</div>
+
+<div class="clear">
+</div>
+
+<div class="float_right data_editbtns margin_top5"><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff remove_btn color_9"  onclick="cancelskills();"><i class="icon-remove"></i> Cancel </button><button type="button" class="float_right _hov cursor padd_5 lignheight20 br5 border_ccc bg_fff edit_btn color_9"><i class="icon-pencil"></i> Update </button>
+</div>
+</div></li>
+</ul>
+</div>
+<!-- END EDIT SKILLS -->
+</ul>
+</div>
+
+<div class="w100p float_left rel clear padd10 text_center" id="data_update_btn">
+
+<p class="w100p float_left text_center font12">You made 2 Changes</p><button class="blu_grad rel padd5 br5 font18 color_fff capital cursor progress-button" type="button" data-style="top-line" data-horizontal>Update</button>
+</div>
+</div>
+</div>
+</section>
+<footer></footer>
+<script src="js/script_1.9.js">
+</script>
+<script src="js/modernizr.custom.js">
+</script>
+<script src="js/classie.js">
+</script>
+<script src="js/progressButton.js">
+
+</script><script src="js/dynamicforms.js" />
+<script>
+    [].slice.call( 
+    document.querySelectorAll('button.progress-button' )).forEach(function( bttn ){
+        new ProgressButton( bttn,{
+            callback : function( instance ){
+            var progress=0,interval=setInterval( function(){progress=Math.min( progress + Math.random() * 0.2, 1 );                                       instance._setProgress( progress );if( progress===1 ){instance._stop(1);
+                                                                                                                                                                                                               clearInterval( interval );}}, 200 );}});});
+
+    </script>
+    
+    
+</body>
+</html>

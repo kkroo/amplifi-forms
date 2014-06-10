@@ -1,0 +1,230 @@
+	@charset "utf-8";
+	/* CSS Document */@font-face
+{
+	font-family: 'bebas_neueregular';
+	src: url('../fonts/bebasneue-webfont.eot');
+	src: url('../fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bebasneue-webfont.woff') format('woff'), url('../fonts/bebasneue-webfont.ttf') format('truetype'), url('../fonts/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+	font-weight: normal;
+	font-style: normal
+}
+.container
+{
+	width: 840px;
+	z-index: 2
+}
+	#data_importer
+{
+	background: #fafafa;
+	position: absolute;
+	width: 830px;
+	top: -1px;
+	left:-1px;
+	overflow: auto;
+	opacity: 0.97
+}
+.data_div_seprater
+{
+	width: 1px;
+	height: 100%;
+	background: #ccc;
+	left: 49.9%
+}
+	#lefter_data .title_txt
+{
+	color: #1cb9f8
+}
+.data_lister > li:last-child
+{
+	border-bottom: 1px solid #ccc
+}
+.data_lister > li
+{
+	border-bottom:0
+}
+
+.data_lister > li > span
+{
+	width: 10%
+}
+.data_lister > li .drag_img
+{
+	top: -8px;
+	right: -20px;
+	display: none;
+}
+.data_lister > li > .extend_data
+{
+	display: none
+}
+.data_lister > li:hover > .extend_data
+{
+	display: block
+}
+.data_lister > li:hover .drag_img
+{
+	display: block
+}
+.data_lister > li:hover > span
+{
+	display: none
+}
+.data_lister > li:hover .spaner_2
+{
+	display: block
+}
+.subdata_lister li > label
+{
+	color:#4a4a4a
+}
+.subdata_lister_bulk li
+{
+	padding-bottom: 10px
+}
+.subdata_lister_bulk li:first-child
+{
+	border-top: 0
+}
+.subdata_lister_bulk li:last-child
+{
+	border-bottom: 0
+}
+.data_skil{
+    margin: 0 3px 5px 0;
+    padding: 3px 5px;
+    display: inline-block;
+}
+#righter_data .data_skil{
+    background: #ececec;
+}
+
+	#righter_data .title_txt
+{
+	color: #ff6c27
+}
+#righter_data .data_lister > li > .extend_data
+{
+	display: block;
+}
+	#righter_data .data_lister > li
+{
+	background: #fff
+}
+	#righter_data .data_lister > li > span
+{
+	color: #ff6c27
+}
+	#righter_data .data_lister > li:hover > span
+{
+	color: #1cb9f8
+}
+	#righter_data .drag_img
+{
+	display: none
+}
+	#righter_data .data_lister > li:hover
+{
+	cursor: default
+}
+.data_editbtns .edit_btn i
+{
+	color: #168700
+}
+.data_editbtns .remove_btn i
+{
+	color: #a81919
+}
+.data_editbtns .edit_btn:hover
+{
+	color: #168700
+}
+.data_editbtns .remove_btn:hover
+{
+	color: #a81919
+}
+	#righter_data .data_editbtns
+{
+	display: block
+}
+	#righter_data li
+{
+	position: static !important
+}
+	#data_update_btn
+{
+	background: #fafafa;
+	z-index: 2
+}
+	#data_update_btn button
+{
+	width: 150px
+}
+	/* General styles for all types of buttons */.progress-button
+{
+	//position: relative
+}
+.progress-button[disabled],.progress-button[disabled].state-loading
+{
+	cursor: default
+}
+.progress-button .content
+{
+	position: relative;
+	display: block
+}
+.progress-button .content::before,.progress-button .content::after
+{
+	position: absolute;
+	right: 0px;
+	color: #016499;
+	font-family: FontAwesome;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.3s;
+	transition: opacity 0.3s 0.3s
+}
+.progress-button .content::before
+{
+	content: "\f00c";
+	/* Checkmark for success */
+}
+.progress-button .content::after
+{
+	content: "\e601";
+	/* Cross for error */
+}
+.progress-button.state-success .content::before,.progress-button.state-error .content::after
+{
+	opacity: 1
+}
+.notransition
+{
+	-webkit-transition: none !important;
+	transition: none !important
+}
+.progress-button .progress
+{
+	background: #016499
+}
+.progress-button .progress-inner
+{
+	position: absolute;
+	left: 0;
+	background: #016499
+}
+.progress-button[data-horizontal] .progress-inner
+{
+	top: 0;
+	width: 0;
+	height: 100%;
+	-webkit-transition: width 0.3s, opacity 0.3s;
+	transition: width 0.3s, opacity 0.3s
+}
+.progress-button[data-style="top-line"] .progress-inner
+{
+	height: 3px
+}
+.progress-button[data-style="top-line"] .content::before,.progress-button[data-style="top-line"] .content::after
+{
+	right: auto;
+	left: 85%
+}
+	/*Drag Drop*/ 
